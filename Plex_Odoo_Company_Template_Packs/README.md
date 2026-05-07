@@ -9,6 +9,9 @@ This folder was generated from:
 - `<company>/templates_xlsx`: copied workbook templates
 - `<company>/templates_csv_headers`: header-only CSV templates (ready for population script)
 - `<company>/mapping`: mapping documents from Plex fields to Odoo fields
+- `<company>/populated_csv`: filled import CSVs (run `populate_company_templates_from_plex.py`; warehouses/locations also synced via `sync_company_locations_into_data_and_packs.py`)
+
+Per-company canonical Plex locations (warehouse code/name, location codes/types) also live in **`Company specific data/<company>/locations_from_plex_system.csv`** after running `export_locations_compare_per_company.py` then **`sync_company_locations_into_data_and_packs.py`**.
 
 ## Companies
 
